@@ -1,0 +1,12 @@
+#!/bin/sh
+
+out=$2
+
+echo '{' >> $out
+echo '  "date":  "'$(date)'",' >> $out
+echo '  "hostname":  "'$(hostname)'",' >> $out
+echo '  "infile": "'$1'",' >> $out
+echo '  "outfile": "'$2'"' >> $out
+echo '}' >> $out
+
+exit 0

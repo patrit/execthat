@@ -1,0 +1,4 @@
+#/bin/sh
+
+echo '"{"status": "healthy"}' > $2
+exit 0
